@@ -1,3 +1,6 @@
+let userColor = prompt("Введите цвет фона (например: red, blue, pink):");
+document.body.style.backgroundColor = userColor;
+
 let color = prompt("Введите цвет светофора на англ (red, yellow, green)");
 
 let red = document.getElementById("red");
