@@ -11,3 +11,10 @@
     font-weight: bold;
     color: white;
 }
+#title {
+    background-color: #fff;
+    position: absolute;
+    top: 20px;  /* отступ сверху */
+    left: 20px; /* отступ справа */
+    width: 305px;
+}

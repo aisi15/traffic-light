@@ -1,5 +1,14 @@
-let userColor = prompt("Введите цвет фона (например: red, blue, pink):");
-document.body.style.backgroundColor = userColor;
+let bgColor = prompt("Введите цвет фона (например: red, blue, pink)");
+let title = document.getElementById("title");
+
+document.body.style.backgroundColor = bgColor;
+
+if (document.body.style.backgroundColor !== "") {
+  title.innerText = "Фон изменён на " + bgColor;
+} else {
+  title.innerText = "Ошибка! Введите корректный цвет";
+}
+
 
 let color = prompt("Введите цвет светофора на англ (red, yellow, green)");
 
@@ -21,5 +30,5 @@ else if (color === "green") {
     green.innerText = "GO";
 }
 else {
-    alert("не тупите! у светофора только 3 цвета")
+    alert("Ошибка! У светофора только 3 цвета")
 }
